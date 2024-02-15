@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f46d37f993.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="InShot_20240211_152659015.png" class="logo"> -->
+                <div class="header-text1">
+                    <h1><span>G</span>aurav</h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>  
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I am <span>Gaurav</span> Singh Sahu <br> Full Stack Web Developer</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------About------------------------------------  -->
+    <div id="about">
+          <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Gaurav.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello, My name is Gaurav Singh Sahu, I am a software Developer with strong passion for what I do 
+                        and commitment to always learning. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('training')">Training & Certifications</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Design Web Application</li>
+                            <li><span>Software Developer</span><br>Design high quality Software</li>
+                            <li><span>Programming</span><br>Java, JDBC, JEE, Hibernate, Spring, Basic C,C++,Python</li>
+                            <li><span>Web Technologies</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Database</span><br>MySQL</li>
+                            <li><span>Soft Skills</span><br>Problem Solving, Team Work</li>
+                            <li><span>Tools</span><br>Eclips IDE,IntelliJ, MySQL Workbench, MS Office, AI tools</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BTech Degree</span><br>Goverment Engineering College, Bilaspur(CG) <br> CPI: 8.71 <br> 2019-23 </li>
+                            <li><span>X<sup>th</sup> </span><br>Shree Mahaveer Jain Vidyalaya, Durg(CG) <br> Percentage: 93.33% <br> 2017 </li>
+                            <li><span>XII<sup>th</sup> </span><br>Shree Mahaveer Jain Vidyalaya, Durg(CG) <br> Percentage: 86.66% <br> 2019 </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="training">
+                        <ul>
+                            <li><span>Full Stack Web Development</span><br>Tap Academy, Bangalor</li>
+                            <li><span>Web Development</span><br>Internshala Training</li>
+                            <li><span>HTML5</span><br>Coursera, University Of Michigan</li>
+                            <li><span>Python for Data Science</span><br>Internshala Training</li>
+                            <li><span>Python</span><br>Coursera, University Of Michigan</li>
+                            <li><span>Python for Data Science</span><br>Board Infinity</li>
+                            <li><span>C for everyone</span><br>Coursera</li>
+                            <li><span>Android Development</span><br>Technex, IIT(BHU)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July,2023 - Current</span><br>Full Stack Development Training at Tap Academy</li>
+                            <li><span>Jan,2021-March,2021</span><br>HRM intern at Ria.Social</li>
+                            <li><span>Feb,2020-Aug,2020</span><br>Internshala Student Partner</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>  
+    </div>
+    <!--  -------------------------------------Services--------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p>Creating and implementing the visual and interactive elements of a website or 
+                        application that users interact with directly. This includes developing user interface (UI) designs, layouts, 
+                        and features using various programming languages, such as HTML, CSS, and JavaScript.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Development</h2>
+                    <p>design and functionality of websites. They interact with the web and visual designers, 
+                        analyze website traffic, handle website issues, and upgrade websites as required.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Java Development</h2>
+                    <p>Design and implement Java application phases.
+                        Participate in architectural and software development activities.
+                        Conduct software analysis, testing, programming, and debugging.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -------------------------------------Portfolio--------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Project Experience</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="29b570852c798334d7fd808e83fa4e4a.jpg" alt="">
+                    <div class="layer">
+                        <h3>Atithyam Website</h3>
+                        <p>Athityam is a digital platform that empowers entrepreneurs
+                            and small businesses with hotels and homes by providing full 
+                            stack technology that increases earnings and eases operations. 
+                            Bringing affordable and trusted accommodation that guests can 
+                            book instantly.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="R.jfif" alt="">
+                    <div class="layer">
+                        <h3>Om Mantra</h3>
+                        <p>The project is aimed at developing a web application that depicts 
+                            online mental and physical healthcare facility for student or 
+                            member of particular organization. It inclu
+                            des different poses of 
+                            yogasana , Its also have various online classes or sessions.l</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="ios9-iphone6s-notes-create-new-note.png" alt="">
+                    <div class="layer">
+                        <h3>My Note App</h3>
+                        <p> This App can be used to write some notes in your mobile, Which helps you 
+                            remember things.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!--  -------------------------------------Contact--------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>gauravsahu132@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>(+91)7692965832</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gaurav-singh-sahu-579b411a1/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/GauravSahu132"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/gauravsingh.gauravsingh.73932646/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/GauravSinghSah2?t=Xrm_ox5DdoXboEzX8XCdhg&s=08"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/mr.gaurav__sahu_?igsh=ZzljYzhqemM5N3Bp"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6"  placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Gaurav.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxiRg9SxCAzto_udBDAj3Rj4_w_nEZRM39rcTmwf5uKsoK-cVxbGmHsNFiJECZ4LFBr/exec'
+        const form = document.forms['submit-to-google-sheet']
+        constmsg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
